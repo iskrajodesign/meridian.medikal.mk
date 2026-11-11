@@ -116,6 +116,59 @@ a:focus-visible,button:focus-visible{outline:2px solid #60A5FA;outline-offset:3p
 .mm-burger{display:none}
 .mm-nav-close{display:none}
 .mm-cta-mobile{display:none}
+
+.pt-wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px clamp(24px,4vw,64px);align-items:start}
+.pt-col{display:flex;flex-direction:column;gap:20px;min-width:0;position:relative}
+.pt-phase{display:flex;flex-direction:column;gap:2px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:0.04em}
+.pt-phase b{font-size:15px;font-weight:600;letter-spacing:0.16em;color:#1D4ED8}
+.pt-phase span{font-family:'Onest',sans-serif;text-transform:none;letter-spacing:0;font-size:15px;color:#475569}
+.pt-phase strong{font-size:clamp(20px,1.9vw,26px);font-weight:600;line-height:1.2;color:#0B1220}
+.pt-card{background:#0F2A5C;color:#FFFFFF;border-radius:8px;padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.pt-num{font-family:'Oswald',sans-serif;font-size:44px;line-height:1;font-weight:500;color:#FFFFFF}
+.pt-card h3{margin:0;font-family:'Oswald',sans-serif;font-size:18px;line-height:1.2;font-weight:600;letter-spacing:0.03em;text-transform:uppercase}
+.pt-card p{margin:0;font-size:15px;line-height:1.55;color:#C9D6EE}
+.pt-cta{margin-top:56px;max-width:900px;margin-left:auto;margin-right:auto;background:#0F2A5C;color:#fff;border-radius:8px;padding:32px clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.pt-cta h3{margin:0 0 6px;font-family:'Oswald',sans-serif;font-size:clamp(20px,2vw,26px);font-weight:600;letter-spacing:0.03em;text-transform:uppercase}
+.pt-cta p{margin:0;font-size:16px;color:#C9D6EE}
+.pt-cta a{display:inline-block;background:#FFFFFF;color:#0B1220;text-decoration:none;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:14px 26px;border-radius:6px}
+.pt-wrap{--g:clamp(24px,4vw,64px);--ah:36px}
+.pt-col{gap:var(--ah)}
+.pt-card{position:relative}
+.pt-first::after,.pt-next::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:calc(var(--ah) - 8px);background:#38BDF8;transform:translateX(-1px)}
+.pt-first::before,.pt-next::before{content:"";position:absolute;left:50%;top:calc(100% + var(--ah) - 18px);border:7px solid transparent;border-top:11px solid #38BDF8;border-bottom:0;transform:translateX(-50%)}
+.pt-stage{position:relative;width:100%;max-width:1360px;margin:0 auto;container-type:inline-size}
+.pt-stage::before{content:"";display:block;padding-top:34.43%}
+.pt-stage svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ps-card{position:absolute;box-sizing:border-box;background:#0F2A5C;color:#fff;border-radius:1.1cqw;padding:1.1cqw 1.2cqw 1.2cqw;display:flex;flex-direction:column;gap:0.35cqw;min-width:0}
+.ps-card b{font-family:'Oswald',sans-serif;font-weight:500;font-size:2.6cqw;line-height:1}
+.ps-card h3{margin:0;font-family:'Onest',sans-serif;font-weight:600;font-size:1.05cqw;line-height:1.2}
+.ps-card p{margin:0;font-size:0.85cqw;line-height:1.4;color:#C9D6EE}
+.ps-phase{position:absolute;display:flex;flex-direction:column;gap:0.15cqw}
+.ps-phase em{font-style:normal;font-family:'Oswald',sans-serif;font-weight:700;font-size:1.7cqw;letter-spacing:0.02em;text-transform:uppercase;color:#1D4ED8}
+.ps-phase span{font-size:1.2cqw;color:#475569}
+.ps-phase strong{font-family:'Onest',sans-serif;font-weight:600;font-size:1.45cqw;line-height:1.2;color:#0B1220}
+.sv-panel{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.sv-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#64748B}
+.sv-top span:first-child{color:#1D4ED8}
+.sv-head h2{margin:0 0 8px;font-family:'Onest',sans-serif;font-size:clamp(26px,3vw,34px);line-height:1.15;font-weight:700;color:#0B1220}
+.sv-head p{margin:0;font-size:16px;line-height:1.5;color:#475569}
+.sv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.sv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sv-grid{grid-template-columns:minmax(0,1fr)}}
+.sv-card{display:flex;flex-direction:column;min-width:0;background:#FFFFFF;border:1px solid #E2E8F0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit}
+.sv-card img{display:block;width:100%;aspect-ratio:16/11;object-fit:cover}
+.sv-card div{display:flex;flex-direction:column;gap:6px;padding:16px 18px 20px}
+.sv-card h3{margin:0;font-family:'Onest',sans-serif;font-size:17px;line-height:1.25;font-weight:700;color:#0B1220}
+.sv-card p{margin:0;font-size:14px;line-height:1.5;color:#475569}
+.sv-all{display:flex;flex-direction:column;gap:6px;padding-top:20px;border-top:1px solid #D5DEEA}
+.sv-all a{display:flex;justify-content:space-between;gap:16px;text-decoration:none;font-weight:700;font-size:16px;color:#0B1220}
+.sv-all p{margin:0;font-size:15px;color:#475569}
+.sv-steps{display:flex;flex-direction:column;gap:6px;text-decoration:none;background:#1E4E8C;color:#FFFFFF;border-radius:10px;padding:18px 22px}
+.sv-steps span{display:flex;justify-content:space-between;gap:16px;font-weight:700;font-size:17px}
+.sv-steps small{font-size:14px;line-height:1.45;color:#DCE7F7}
+@media (min-width:901px){.pt-list{display:none}}
+@media (max-width:900px){.pt-stage{display:none}}
+@media (max-width:900px){.pt-wrap{grid-template-columns:1fr}.pt-col::after{display:none}}
 @media (max-width:768px){
   .mm-burger{display:inline-flex !important}
   .mm-cta{display:none !important}
@@ -184,7 +237,65 @@ a:focus-visible,button:focus-visible{outline:2px solid #60A5FA;outline-offset:3p
     </div>
   </section>
 
-  <section id="za-nas" data-screen-label="About" style="position:relative;z-index:0;margin-top:-5.2vw;background:#F1F5F9;color:#0F172A;padding:calc(104px + 5.2vw) 8% calc(112px + clamp(48px,8vw,120px))">
+  <section id="sto-ve-maci" data-screen-label="Problems" style="position:relative;z-index:0;margin-top:-5.2vw;background:#FFFFFF;color:#0B1220;padding:calc(72px + 5.2vw) 4% 0">
+    <div class="sv-panel">
+      <div class="sv-head"><h2>Што ве мачи?</h2><p>Кога болката ви го отежнува секојдневието,<br>важно е да го откриете вистинскиот пристап.</p></div>
+      <div class="sv-grid">
+        <a class="sv-card" href="dijagnozi.html"><img src="assets/ceka-vrat.jpg" alt="Ве боли вратот?" loading="lazy"><div><h3>Ве боли вратот?</h3><p>Тешко да вртите главата или чувствувате затегнатост во рамената?</p></div></a>
+        <a class="sv-card" href="dijagnozi.html"><img src="assets/ceka-grb.jpg" alt="Ве боли грбот?" loading="lazy"><div><h3>Ве боли грбот?</h3><p>Ве пресекува во половината или болката се спушта по нозете?</p></div></a>
+        <a class="sv-card" href="dijagnozi.html"><img src="assets/ceka-kolena.jpg" alt="Ве болат колената и зглобовите?" loading="lazy"><div><h3>Ве болат колената и зглобовите?</h3><p>Ви пречат одењето, скалите или станувањето?</p></div></a>
+        <a class="sv-card" href="dijagnozi.html"><img src="assets/ceka-muskuli.jpg" alt="Ве болат мускулите?" loading="lazy"><div><h3>Ве болат мускулите?</h3><p>Чувствувате затегнатост, грчеви или болка при движење?</p></div></a>
+        <a class="sv-card" href="dijagnozi.html"><img src="assets/ceka-trnenje.jpg" alt="Чувствувате трнење?" loading="lazy"><div><h3>Чувствувате трнење?</h3><p>Ви трнат рацете или нозете, чувствувате пецкање или жарење?</p></div></a>
+        <a class="sv-card" href="dijagnozi.html"><img src="assets/ceka-povreda.jpg" alt="Тешко се движите по повреда?" loading="lazy"><div><h3>Тешко се движите по повреда?</h3><p>Сè уште не сте ја вратиле подвижноста по повреда или операција?</p></div></a>
+      </div>
+      <div class="sv-all"><a href="dijagnozi.html"><span>Сите дијагнози</span><span>→</span></a><p>Посебна страница со медицински називи и категории на дијагнози.</p></div>
+      <a class="sv-steps" href="#pat"><span><span>Чекори во лекувањето</span><span>↓</span></span><small>Дознајте како изгледа патот од првиот преглед до завршувањето на терапијата.</small></a>
+    </div>
+  </section>
+
+  <section id="pat" data-screen-label="Process" style="position:relative;z-index:0;scroll-margin-top:72px;background:#FFFFFF;color:#0B1220;padding:72px 4% 80px">
+    <div style="max-width:1360px;margin:0 auto">
+      <div style="text-align:center;display:flex;flex-direction:column;gap:12px;margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Oswald',sans-serif;font-size:clamp(28px,3.4vw,46px);line-height:1.1;font-weight:700;letter-spacing:0.025em;text-transform:uppercase;color:#0B1220;text-wrap:balance">Вашиот пат до подобро движење</h2>
+        <p style="margin:0;font-size:18px;color:#475569;text-wrap:balance">Од првиот разговор до завршната контрола, знаете што ве очекува во секоја фаза.</p>
+      </div>
+      <div class="pt-stage" style="position:relative;container-type:inline-size">
+<svg viewBox="0 0 1365 470" fill="none" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible"><defs><marker id="pa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 L9 5 L1 9" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><g stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M262 152 V365 Q262 387 284 387 H380" marker-end="url(#pa)"/><path d="M380 387 H452 Q474 387 474 365 V92 Q474 62 504 62 H518" marker-end="url(#pa)"/><path d="M760 166 V240" marker-end="url(#pa)"/><path d="M922 340 H978" marker-end="url(#pa)"/><path d="M1072 224 V150 Q1072 122 1102 122 H1158" marker-end="url(#pa)"/></g></svg>
+<div class="ps-phase" style="left:4.25%;top:22.34%;width:12.45%"><em>Фаза 1</em><span>Подготовка</span><strong>Прв контакт и закажување</strong></div>
+<div class="ps-card" style="left:17.22%;top:4.68%;width:16.48%"><b>01</b><h3>Посета кај матичен лекар</h3><p>Добивате упат за преглед кај физијатар.</p></div>
+<div class="ps-card" style="left:21.98%;top:45.74%;width:11.72%"><b>02</b><h3>Јавување и закажување</h3><p>Телефонски нѐ контактирате за да потврдиме датум и час за првиот преглед.</p></div>
+<div class="ps-card" style="left:38.68%;top:3.83%;width:18.32%"><b>03</b><h3>Прв специјалистички преглед</h3><p>Докторот ја разгледува вкупната состојба и медицинската документација.</p></div>
+<div class="ps-phase" style="left:39.93%;top:56.38%;width:12.82%"><em>Фаза 2</em><span>Преглед</span><strong>Дијагноза и план</strong></div>
+<div class="ps-card" style="left:54.21%;top:52.13%;width:12.82%"><b>04</b><h3>Индивидуален план</h3><p>По потреба се прават дополнителни иследувања, а потоа се одредува соодветната терапија.</p></div>
+<div class="ps-phase" style="left:71.43%;top:3.83%;width:12.82%"><em>Фаза 3</em><span>Терапија</span><strong>Следење и контрола</strong></div>
+<div class="ps-card" style="left:72.16%;top:48.94%;width:12.82%"><b>05</b><h3>Започнува терапијата</h3><p>Терапијата најчесто трае 5–10 дена, според индивидуалните потреби.</p></div>
+<div class="ps-card" style="left:85.20%;top:3.83%;width:12.09%"><b>06</b><h3>Завршна контрола</h3><p>По завршувањето на терапијата се врши контролен преглед.</p></div>
+</div>
+      <div class="pt-wrap pt-list">
+        <div class="pt-col">
+          <div class="pt-phase"><b>Фаза 1</b><span>Подготовка</span><strong>Прв контакт и закажување</strong></div>
+          <div class="pt-card pt-first"><span class="pt-num">01</span><h3>Посета кај матичен лекар</h3><p>Добивате упат за преглед кај физијатар.</p></div>
+          <div class="pt-card pt-next"><span class="pt-num">02</span><h3>Јавување и закажување</h3><p>Телефонски нѐ контактирате за да потврдиме датум и час за првиот преглед.</p></div>
+        </div>
+        <div class="pt-col">
+          <div class="pt-phase"><b>Фаза 2</b><span>Преглед</span><strong>Дијагноза и план</strong></div>
+          <div class="pt-card pt-first"><span class="pt-num">03</span><h3>Прв специјалистички преглед</h3><p>Докторот ја разгледува вкупната состојба и медицинската документација.</p></div>
+          <div class="pt-card pt-next"><span class="pt-num">04</span><h3>Индивидуален план</h3><p>По потреба се прават дополнителни иследувања, а потоа се одредува соодветната терапија.</p></div>
+        </div>
+        <div class="pt-col">
+          <div class="pt-phase"><b>Фаза 3</b><span>Терапија</span><strong>Следење и контрола</strong></div>
+          <div class="pt-card pt-first"><span class="pt-num">05</span><h3>Започнува терапијата</h3><p>Терапијата најчесто трае 5–10 дена, според индивидуалните потреби.</p></div>
+          <div class="pt-card pt-last"><span class="pt-num">06</span><h3>Завршна контрола</h3><p>По завршувањето на терапијата се врши контролен преглед.</p></div>
+        </div>
+      </div>
+      <div class="pt-cta">
+        <div><h3>Имате прашања или сакате да закажете?</h3><p>Јавете се и дознајте како да го направите првиот чекор.</p></div>
+        <a href="tel:+38922033433">Контактирајте нè телефонски</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="za-nas" data-screen-label="About" style="position:relative;z-index:0;background:#F1F5F9;color:#0F172A;padding:104px 8% calc(112px + clamp(48px,8vw,120px))">
     <div style="display:flex;flex-wrap:wrap;align-items:stretch;gap:40px clamp(40px,6vw,88px)">
       <div style="flex:1 1 340px;min-width:0;min-height:clamp(340px,34vw,520px);border-radius:8px;overflow:hidden;background:#E2E8F0">
         <image-slot id="about-clinic-photo" src="assets/about-graphic.png" shape="rounded" radius="8" fit="cover" placeholder="Фотографија од третман или ординацијата" style="display:block;width:100%;height:100%;min-height:clamp(340px,34vw,520px)"></image-slot>
